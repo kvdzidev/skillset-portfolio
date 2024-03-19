@@ -10,7 +10,8 @@
             color: white;
         } 
         #linkacz{
-    
+            font-weight: bold;
+            color: red;
         }
         body {
             background-color: blue;
