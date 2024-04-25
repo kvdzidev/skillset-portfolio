@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+        counter-reset: nr;
+        width: 100%;
+    }
+    table,th,td{
+        border-collapse: collapse;
+        border: 1px gray solid;
+        padding: 5px;
+        text-align: left;
+    }
+    table tr{
+        background-color: #eeeeeb;
+        height: 24px;
+    }
+    table tr:nth-child(even){
+        background-color: #faf9f9;
+    }
+    table tr:first-child, table tr:last-child{
+        background-color: #e3e2e2;
+        font-weight: bold;
+    }
+    table tr:hover{
+        background-color: #b7adad;
+    }
+    table td:nth-child(1)::before{
+        counter-increment: nr;
+        content: "Nr " counter(nr);
+    }
+    table td:nth-child(1)::after{
+        content: ":";
+    }
+    table td:nth-child(4)::before{
+        content: "Ocena: ";
+    }
+    table td:nth-child(4){
+        text-align: center;
+    }
+    .ocena1{
+        color: red;
+    }
+    .ocena3{
+        color: #f2b232;
+    }
+    .ocena35{
+        color: rgb(0, 255, 0);
+    }
+    .ocena45{
+        color: blue;
+    }
+    .ocena5{
+        color: purple;
+    }
+    </style>
+</head>
+<body>
+    <h1>Lista uczniów i ich oceny</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Ocena</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Jan</td>
+            <td>Kowalski</td>
+            <td class="ocena5">5.0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Maria</td>
+            <td>Nowak</td>
+            <td class="ocena35">3.5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Andrzej</td>
+            <td>Wiśniewski</td>
+            <td class="ocena3">3.0</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Anna</td>
+            <td>Kowalczyk</td>
+            <td class="ocena45">4.5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Piotr</td>
+            <td>Nowakowski</td>
+            <td class="ocena1">1.0</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
