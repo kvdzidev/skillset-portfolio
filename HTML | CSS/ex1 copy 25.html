@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+    <style>
+        .body {
+            background-color: rgb(249, 249, 248);;
+        }
+        .gora {
+            background-color: rgb(255, 236, 213);
+            width: 100%;
+            height: 85px;
+            margin-top: 0;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            position: fixed; 
+            top: 0;
+            align-items: center;
+            display: flex;
+            justify-content: center; 
+        }
+        .gora h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 15px;
+            color: rgb(91, 97, 97);
+            text-align: center;
+        }  
+
+        .formik {
+            margin-top: 120px;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: rgb(253, 251, 252);
+            box-shadow: 1px 2px 5px rgba(138, 136, 136, 0.5);
+            padding: 20px;
+            position: relative;
+        }
+
+        .ino {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin: 25px;
+            border: 1px #b4afaf36 solid;
+            padding: 30px;
+            position: relative; 
+        }
+        .ino input {
+            border: none; 
+            border: 1px solid #ccc; 
+            outline: none;
+            border-radius: 0;
+        }
+        .ino::before {
+            content: "Add item";
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            color: rgb(123, 123, 123);
+            position: absolute;
+            top: -10px; 
+            left: 20px;
+            background-color: rgba(253, 251, 252, 3); 
+            padding: 0 10px; 
+        }
+        label {
+            grid-column: 1;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: right;
+        }
+        input {
+            grid-column: 2;
+            margin-bottom: 10px;
+            width: calc(100% - 120px);
+        }
+        form {
+            display: grid;
+            grid-template-columns: 120px auto;
+            grid-gap: 10px;
+            text-align: right;
+        }
+        button{
+            background-color: rgb(168, 168, 154);
+            color: rgb(255, 255, 255);
+            border: none;
+            width: 60px;
+            height: 35px;
+            margin-left: 1350px;
+        }
+        span{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            color: rgb(61, 64, 64);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .tabelka {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: rgb(253, 251, 252);
+            box-shadow: 1px 2px 5px rgba(138, 136, 136, 0.5);
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            text-align: left;
+            padding: 0 30px 0 30px;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 10px 20px;
+            background-color: rgb(255, 236, 213);
+        }
+
+        td {
+            padding: 20px 20px;
+        }
+
+        tr:nth-of-type(2n) {
+            background-color: rgba(255, 226, 191, 0.199)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gora"><h1>TITLE</h1></div>
+    <div class="formik">
+        <div class="ino">
+            <form action="*" class="f">
+                <label for="text"><span>NAME</span></label>
+                <input type="text" id="text" class="p">
+                <label for="descript"><span>DESCRIPTION</span></label>
+                <input type="text" id="descript" class="p">
+                <label for="val"><span>VALUE</span></label>
+                <input type="value" id="val" class="p">
+                <button>SAVE</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tabelka">
+
+        <table>
+
+            <tr>
+                <th></th>
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>VALUE</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lorem, ipsum dolor</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit atque temporibus sint deleniti totam, est, doloribus sapiente dicta, rem harum voluptatem saepe dolores rerum ducimus pariatur laborum repudiandae minus. Placeat, commodi vel necessitatibus eligendi perferendis mollitia omnis soluta quae ex amet, fugit nobis ipsum. Sint rerum sit doloremque et.</td>
+                <td>Laborum!</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lorem, ipsum dolor</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit atque temporibus sint deleniti totam, est, doloribus sapiente dicta, rem harum voluptatem saepe dolores rerum ducimus pariatur laborum repudiandae minus. Placeat, commodi vel necessitatibus eligendi perferendis mollitia omnis soluta quae ex amet, fugit nobis ipsum. Sint rerum sit doloremque et.</td>
+                <td>Laborum!</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lorem, ipsum dolor</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit atque temporibus sint deleniti totam, est, doloribus sapiente dicta, rem harum voluptatem saepe dolores rerum ducimus pariatur laborum repudiandae minus. Placeat, commodi vel necessitatibus eligendi perferendis mollitia omnis soluta quae ex amet, fugit nobis ipsum. Sint rerum sit doloremque et.</td>
+                <td>Laborum!</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lorem, ipsum dolor</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit atque temporibus sint deleniti totam, est, doloribus sapiente dicta, rem harum voluptatem saepe dolores rerum ducimus pariatur laborum repudiandae minus. Placeat, commodi vel necessitatibus eligendi perferendis mollitia omnis soluta quae ex amet, fugit nobis ipsum. Sint rerum sit doloremque et.</td>
+                <td>Laborum!</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lorem, ipsum dolor</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odit atque temporibus sint deleniti totam, est, doloribus sapiente dicta, rem harum voluptatem saepe dolores rerum ducimus pariatur laborum repudiandae minus. Placeat, commodi vel necessitatibus eligendi perferendis mollitia omnis soluta quae ex amet, fugit nobis ipsum. Sint rerum sit doloremque et.</td>
+                <td>Laborum!</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>

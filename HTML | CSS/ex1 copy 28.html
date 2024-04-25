@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 5;
+            padding: 0;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            color: white;  
+        }
+
+        .chess-container {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 5;
+            display: flex;
+            width: calc(90vw - 20px);
+            height: calc(90vh - 20px);
+            max-width: 600px;
+            max-height: 600px;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+        }
+
+        .szachownica {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            width: 100%;
+            height: 100%;
+            gap: 2px;
+        }
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #ffffff;
+        }
+
+        .cell:nth-child(even) {
+            background-color: #ecd6b4;
+        }
+
+        .cell:nth-child(odd) {
+            background-color: #8f6339;
+        }
+    </style>
+</head>
+<body>
+    <div class="chess-container">
+        <div class="szachownica">
+            <div class="cell">1</div>
+            <div class="cell">2</div>
+            <div class="cell">3</div>
+            <div class="cell">4</div>
+            <div class="cell">5</div>
+            <div class="cell">6</div>
+            <div class="cell">7</div>
+            <div class="cell">8</div>
+            <div class="cell">9</div>
+            <div class="cell">10</div>
+            <div class="cell">11</div>
+            <div class="cell">12</div>
+            <div class="cell">13</div>
+            <div class="cell">14</div>
+            <div class="cell">15</div>
+            <div class="cell">16</div>
+            <div class="cell">17</div>
+            <div class="cell">18</div>
+            <div class="cell">19</div>
+            <div class="cell">20</div>
+            <div class="cell">21</div>
+            <div class="cell">22</div>
+            <div class="cell">23</div>
+            <div class="cell">24</div>
+            <div class="cell">25</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

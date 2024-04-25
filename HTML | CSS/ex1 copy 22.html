@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Float Positioning Example</title>
+<style>
+    .wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    .left {
+        float: left;
+        width: 70%;
+    }
+    .right {
+        float: left;
+        width: 30%;
+    }
+    .menu ul {
+        font-style: none;
+        list-style: none;
+        border-style: none;
+        text-decoration-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li {
+        float: left;
+        margin-right: 20px;
+    }
+    .menu a {
+        display: block;
+        margin-right: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="left">
+        Treść lewa
+    </div>
+    <div class="right">
+        Treść prawa
+    </div>
+</div>
+
+<ul class="menu">
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</ul>
+
+</body>
+</html>
